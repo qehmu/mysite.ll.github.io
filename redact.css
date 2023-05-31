@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+body{
+    font-family:Merriweather, serif;
+    background: linear-gradient(93deg, #5476ae 0%, #682475);
+}
+.nav-link{
+    color: rgba(93, 238, 238, 0.86)
+}
+.navbar-nav .nav-link.active{
+    color: rgba(82, 70, 92, 0.827);
+}
+.navbar-brand>img{
+    width: 60px;
+}
+.navbar-toggler{
+    background-color: rgb(163, 157, 157);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4);
+}
+
+.card {
+    margin: 2em;
+}
+
+.card>.info {
+    text-align: center;
+    font-size: 2em;
+}
+
+
+@media(max-width:800px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5);
+    }
+}
+
+@media(max-width:600px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9);
+    }
+
+    .card {
+        margin-inline: 0;
+    }
+}
+.proj{
+    background: linear-gradient(270deg, #5476ae 0%, #7b328a);
+    font-size: 30px;
+    border-style: solid;
+    border-width: 0.7px;
+    display:inline-flex;
+    background-color: rgb(92, 159, 144);
+}
+.card{
+    width:20em;
+}
+.help{
+    text-align: center;
+    animation: myAnim 4s linear 0s infinite alternate none;
+}
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-45px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-24px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(-12px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(-6px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.ft-txt{
+    color: #142847;
+    margin: auto auto;
+}
+.ft-txt>p>a{
+text-decoration: none;
+}
+footer{
+
+        background: linear-gradient(45deg, #67738a 0%, #b548cb);
+}
+.med-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
